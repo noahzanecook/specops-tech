@@ -14,23 +14,23 @@ export default function HeroSection() {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="flex flex-col items-start space-y-8">
+          <div className="flex flex-col items-start space-y-8 overflow-visible">
             <div>
               <div className="inline-flex items-center px-3 py-1 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm mb-6">
                 <span className="w-2 h-2 rounded-full bg-accent animate-pulse mr-2"></span>
-                AR Hackathon 2025
+                Immerse GT 2025
               </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
-                <span className="block text-glow">Transform Reality</span>
-                <span className="gradient-text block">With ARcade</span>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold py-3 line">
+                <span className="block text-glow line">Multiplayer AR</span>
+                <span className="gradient-text block line leading-normal">With Spec Ops</span>
               </h1>
-              <p className="mt-6 text-xl text-foreground/80 max-w-lg">
-                Immerse yourself in our groundbreaking AR technology that blends digital elements with the physical world in ways you've never experienced before.
+              <p className="mt-8 text-xl text-foreground/80 max-w-lg overflow-visible">
+                Turn the Real World into Your Laser Tag Arena.
               </p>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="group">
+              <Button size="lg" className="group" onClick={() => window.location.href = "#demo"}>
                 Watch Demo
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Button>
@@ -40,12 +40,25 @@ export default function HeroSection() {
             </div>
             
             <div className="flex items-center text-sm text-foreground/60">
-              <div className="flex -space-x-2 mr-3">
-                {[1, 2, 3, 4].map((i) => (
-                  <div key={i} className="w-8 h-8 rounded-full border-2 border-background bg-gradient-to-br from-primary/80 to-accent/80"></div>
-                ))}
-              </div>
-              <span>+2.5K users already experiencing ARcade</span>
+            <a
+    href="#team"
+    className="flex items-center -space-x-2 mr-3 hover:underline"
+  >
+            <div className="flex -space-x-2 mr-3">
+              {["https://media.licdn.com/dms/image/v2/D4E03AQHZraDe1LxFwg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1690380739485?e=1749081600&v=beta&t=AW7zat6yeVChDDOJNA7ReGU_TffdhPCdTfNjXyuxlS0",
+              "https://media.licdn.com/dms/image/v2/D4E03AQFgndCG2WEIzA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1732853513955?e=1749081600&v=beta&t=fzWpxz8H6_9NbKsrB-1gzvacMlPZxXnA4HTU12fK_zY",
+              "https://media.licdn.com/dms/image/v2/D4E03AQGTBmOrKCemag/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1671591181298?e=1749081600&v=beta&t=oA2paW_DUVSVQBkP5nV9RsBhdCajT68CYMhckty92s4",
+              "https://media.licdn.com/dms/image/v2/D4E03AQGeDZbg-dbdzg/profile-displayphoto-shrink_800_800/B4EZXze.29HMAc-/0/1743546740468?e=1749081600&v=beta&t=A5wEISWbqqcC03jh0CL84H09lSTwMRcVEwkgczWyoXY"].map((src, i) => (
+                <img
+                  key={i}
+                  src={src}
+                  alt={`Team member ${i + 1}`}
+                  className="w-8 h-8 rounded-full border-2 border-background"
+                />
+              ))}
+            </div>
+              <span>Built in 36 hours by the Spec Ops Team</span>
+              </a>
             </div>
           </div>
           

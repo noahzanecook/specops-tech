@@ -7,9 +7,9 @@ export default function ProjectSection() {
     <section id="project" className="py-20 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold mb-4 gradient-text inline-block">Our AR Project</h2>
+          <h2 className="text-3xl font-bold mb-4 gradient-text inline-block">Our AR Laser Tag Project</h2>
           <p className="text-xl text-foreground/80 max-w-2xl mx-auto">
-            ARcade blends cutting-edge augmented reality with intuitive interactions to create immersive experiences.
+            Built in 36 hours, Spec Ops transforms your everyday environment into a tactical battleground. With Snap Spectacles, you can aim, shoot, and score in real-time laser tag with your friends.
           </p>
         </div>
 
@@ -20,7 +20,7 @@ export default function ProjectSection() {
             <div className="relative aspect-video rounded-lg overflow-hidden bg-muted">
               {/* This would ideally be a project visualization or screenshot */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-6xl text-glow gradient-text font-bold">ARcade</div>
+                <div className="text-6xl text-glow gradient-text font-bold">Spec Ops</div>
               </div>
               
               {/* Decorative elements */}
@@ -32,42 +32,16 @@ export default function ProjectSection() {
               </div>
             </div>
             
-            {/* Interactive elements */}
-            <div className="mt-6 grid grid-cols-2 gap-4">
-              <div className="glass-card p-4 rounded-lg">
-                <div className="flex items-center space-x-2">
-                  <div className="w-3 h-3 bg-accent rounded-full"></div>
-                  <span className="text-sm font-medium">Motion Tracking</span>
-                </div>
-              </div>
-              <div className="glass-card p-4 rounded-lg">
-                <div className="flex items-center space-x-2">
-                  <div className="w-3 h-3 bg-primary rounded-full"></div>
-                  <span className="text-sm font-medium">Spatial Mapping</span>
-                </div>
-              </div>
-              <div className="glass-card p-4 rounded-lg">
-                <div className="flex items-center space-x-2">
-                  <div className="w-3 h-3 bg-indigo-500 rounded-full"></div>
-                  <span className="text-sm font-medium">Object Recognition</span>
-                </div>
-              </div>
-              <div className="glass-card p-4 rounded-lg">
-                <div className="flex items-center space-x-2">
-                  <div className="w-3 h-3 bg-purple-500 rounded-full"></div>
-                  <span className="text-sm font-medium">Cloud Anchors</span>
-                </div>
-              </div>
-            </div>
+            
           </div>
           
           <div className="space-y-6">
             <h3 className="text-2xl font-bold">Reinventing Interaction Through AR</h3>
             <p className="text-foreground/80">
-              ARcade transforms how users interact with digital content by seamlessly blending it with the physical world. Our technology creates a new dimension of experience that's intuitive, engaging, and accessible.
+              ldwaldwald wad kwakjd wajd waljhd kwjahdl wahdl whaljdh waljhd lwajhd lwahdl jwhaldj whaldj hwaljdh waljhd lwajhd ljwahdlj whaljd hwlajdh lwajdh
             </p>
             <p className="text-foreground/80">
-              Built for both entertainment and practical applications, ARcade pushes the boundaries of what's possible with AR technology today.
+              l awjdl waljdb waojdba wbdwab odubwaou dbowau dbowuabdo uwabdouwbaodu wbaoudbw oaudbowaubdouwa b
             </p>
             <div className="pt-4 grid sm:grid-cols-2 gap-4">
               <div className="flex items-start space-x-3">
@@ -75,8 +49,8 @@ export default function ProjectSection() {
                   <Layers className="h-5 w-5" />
                 </div>
                 <div>
-                  <h4 className="font-medium">Multi-layered</h4>
-                  <p className="text-sm text-foreground/70">Seamless interaction between virtual and physical</p>
+                  <h4 className="font-medium">Motion Tracking</h4>
+                  <p className="text-sm text-foreground/70">INput descritption</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
@@ -84,8 +58,8 @@ export default function ProjectSection() {
                   <Code className="h-5 w-5" />
                 </div>
                 <div>
-                  <h4 className="font-medium">Open Platform</h4>
-                  <p className="text-sm text-foreground/70">Extensible API for developers</p>
+                  <h4 className="font-medium">Spatial Mapping</h4>
+                  <p className="text-sm text-foreground/70">INput descritption</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
@@ -93,8 +67,8 @@ export default function ProjectSection() {
                   <Eye className="h-5 w-5" />
                 </div>
                 <div>
-                  <h4 className="font-medium">Precision Tracking</h4>
-                  <p className="text-sm text-foreground/70">Millimeter-accurate spatial awareness</p>
+                  <h4 className="font-medium">Object Recognition</h4>
+                  <p className="text-sm text-foreground/70">Players can hide behind walls</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
@@ -102,8 +76,8 @@ export default function ProjectSection() {
                   <Cpu className="h-5 w-5" />
                 </div>
                 <div>
-                  <h4 className="font-medium">Optimized Performance</h4>
-                  <p className="text-sm text-foreground/70">Works on standard mobile devices</p>
+                  <h4 className="font-medium">Something</h4>
+                  <p className="text-sm text-foreground/70">INput descritption</p>
                 </div>
               </div>
             </div>

@@ -1,32 +1,44 @@
 
-import { Github, Linkedin, Twitter } from "lucide-react";
+import { Github, Linkedin, Link } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function TeamSection() {
   const team = [
     {
-      name: "Alex Chen",
-      role: "Lead AR Developer",
-      image: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=500&h=500&fit=crop",
-      bio: "Specializes in spatial computing and AR interaction design with 5+ years of experience."
+      name: "Andrew Levine",
+      role: "GT Electrical Engineering '26",
+      image: "https://media.licdn.com/dms/image/v2/D4E03AQHZraDe1LxFwg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1690380739485?e=1749081600&v=beta&t=AW7zat6yeVChDDOJNA7ReGU_TffdhPCdTfNjXyuxlS0",
+      bio: "is a nerd",
+      linkedin: "https://www.linkedin.com/in/andy-levine/",
+      github: "https://github.com/the-faulty",
+      link: "https://alevine.dev"
     },
     {
-      name: "Mia Johnson",
-      role: "UX Designer",
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&h=500&fit=crop",
-      bio: "Creates intuitive AR interfaces that bridge the gap between digital and physical."
+      name: "Cole Kaplan",
+      role: "GT Computer Science '26",
+      image: "https://media.licdn.com/dms/image/v2/D4E03AQFgndCG2WEIzA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1732853513955?e=1749081600&v=beta&t=fzWpxz8H6_9NbKsrB-1gzvacMlPZxXnA4HTU12fK_zY",
+      bio: "made hit registration",
+      linkedin: "https://www.linkedin.com/in/colekaplan/",
+      github: "https://github.com/ColeKaplan",
+      link: "https://colekaplan.dev/"
     },
     {
-      name: "David Park",
-      role: "3D Artist",
-      image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&h=500&fit=crop",
-      bio: "Crafts detailed digital assets that enhance immersion in augmented experiences."
+      name: "Jaden Hamer",
+      role: "GT Computer Science '26",
+      image: "https://media.licdn.com/dms/image/v2/D4E03AQGTBmOrKCemag/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1671591181298?e=1749081600&v=beta&t=oA2paW_DUVSVQBkP5nV9RsBhdCajT68CYMhckty92s4",
+      bio: "lazer maker",
+      linkedin: "https://www.linkedin.com/in/jaden-hamer-b96226219/",
+      github: "https://github.com/jhamer8",
+      link: "https://jadenh.dev"
     },
     {
-      name: "Sam Rivera",
-      role: "ML Engineer",
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=500&h=500&fit=crop",
-      bio: "Develops computer vision algorithms that power ARcade's object recognition capabilities."
+      name: "Noah Cook",
+      role: "GT Computer Science '26",
+      image: "https://media.licdn.com/dms/image/v2/D4E03AQGeDZbg-dbdzg/profile-displayphoto-shrink_800_800/B4EZXze.29HMAc-/0/1743546740468?e=1749081600&v=beta&t=A5wEISWbqqcC03jh0CL84H09lSTwMRcVEwkgczWyoXY",
+      bio: "made website",
+      linkedin: "https://www.linkedin.com/in/noahzanecook/",
+      github: "https://github.com/noahzanecook",
+      link: "https://noah.win"
     }
   ];
 
@@ -34,9 +46,9 @@ export default function TeamSection() {
     <section id="team" className="py-20 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold mb-4 gradient-text inline-block">Meet Our Team</h2>
+          <h2 className="text-3xl font-bold mb-4 gradient-text inline-block">Meet the creative minds behind Spec Ops</h2>
           <p className="text-xl text-foreground/80 max-w-2xl mx-auto">
-            The creative minds behind ARcade, bringing diverse expertise in AR technology, design, and development.
+            Hover over each team member to see their website, LinkedIn, and GitHub.         
           </p>
         </div>
 
@@ -60,33 +72,27 @@ export default function TeamSection() {
                   <div className="text-center p-6">
                     <p className="text-white mb-4">{member.bio}</p>
                     <div className="flex justify-center space-x-3">
-                      <Button size="icon" variant="ghost" className="rounded-full">
-                        <Twitter className="h-5 w-5" />
-                      </Button>
-                      <Button size="icon" variant="ghost" className="rounded-full">
-                        <Linkedin className="h-5 w-5" />
-                      </Button>
-                      <Button size="icon" variant="ghost" className="rounded-full">
-                        <Github className="h-5 w-5" />
-                      </Button>
+                    <a href={member.link} target="_blank" rel="noopener noreferrer">
+                        <Button size="icon" variant="ghost" className="rounded-full">
+                          <Link className="h-5 w-5" />
+                        </Button>
+                      </a>
+                    <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
+                        <Button size="icon" variant="ghost" className="rounded-full">
+                          <Linkedin className="h-5 w-5" />
+                        </Button>
+                      </a>
+                      <a href={member.github} target="_blank" rel="noopener noreferrer">
+                        <Button size="icon" variant="ghost" className="rounded-full">
+                          <Github className="h-5 w-5" />
+                        </Button>
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           ))}
-        </div>
-        
-        <div className="mt-16 text-center">
-          <p className="mb-6 text-foreground/80 max-w-2xl mx-auto">
-            Our team combines expertise from top tech companies and research institutions, united by a passion for creating next-generation AR experiences.
-          </p>
-          <Button variant="outline" size="lg" className="group">
-            Join Our Team
-            <svg className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
-          </Button>
         </div>
       </div>
     </section>

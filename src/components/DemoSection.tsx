@@ -1,5 +1,5 @@
 
-import { Play, Download, ChevronRight } from "lucide-react";
+import { Play, Github, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function DemoSection() {
@@ -18,6 +18,21 @@ export default function DemoSection() {
       title: "Collaborative Experience",
       description: "Multiple users can interact with the same AR elements in real-time.",
       image: "https://images.unsplash.com/photo-1598520106830-8c45c2417d65?q=80&w=600&auto=format"
+    },
+    {
+      title: "placeholder",
+      description: "blabhabl",
+      image: "https://images.unsplash.com/photo-1598520106830-8c45c2417d65?q=80&w=600&auto=format"
+    },
+    {
+      title: "placeholder",
+      description: "blabhabl",
+      image: "https://images.unsplash.com/photo-1598520106830-8c45c2417d65?q=80&w=600&auto=format"
+    },
+    {
+      title: "placeholder",
+      description: "blabhabl",
+      image: "https://images.unsplash.com/photo-1598520106830-8c45c2417d65?q=80&w=600&auto=format"
     }
   ];
 
@@ -30,7 +45,7 @@ export default function DemoSection() {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold mb-4 gradient-text inline-block">See ARcade in Action</h2>
+          <h2 className="text-3xl font-bold mb-4 gradient-text inline-block">See Spec Ops in Action</h2>
           <p className="text-xl text-foreground/80 max-w-2xl mx-auto">
             Experience the power and versatility of our AR platform through these demos and examples.
           </p>
@@ -54,13 +69,16 @@ export default function DemoSection() {
           </div>
           
           <div className="mt-6 flex flex-wrap gap-4 justify-center">
-            <Button className="gap-2">
-              <Download className="h-4 w-4" />
-              Download Demo App
-            </Button>
-            <Button variant="outline" className="gap-2">
-              Technical Documentation
-              <ChevronRight className="h-4 w-4" />
+            <Button className="gap-2" >
+            <a 
+            href="https://github.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="hidden md:flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors"
+          >
+              <Github className="h-4 w-4" />
+              View on GitHub
+            </a>
             </Button>
           </div>
         </div>
@@ -82,13 +100,7 @@ export default function DemoSection() {
             </div>
           ))}
         </div>
-        
-        <div className="mt-16 text-center">
-          <Button variant="default" size="lg" className="group">
-            Request Custom Demo
-            <ChevronRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-          </Button>
-        </div>
+      
       </div>
     </section>
   );

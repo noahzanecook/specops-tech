@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import { Menu, X, Github } from "lucide-react";
+import { Menu, X, Github, Eye } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -22,9 +22,9 @@ export default function Navbar() {
           <div className="flex items-center">
             <a href="#" className="flex items-center gap-2">
               <div className="w-8 h-8 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-                <span className="font-bold text-white">AR</span>
+                <Eye className="h-5 w-5 text-white" />
               </div>
-              <span className="text-xl font-bold gradient-text">ARcade</span>
+              <span className="text-xl font-bold gradient-text">Spec Ops</span>
             </a>
           </div>
 
