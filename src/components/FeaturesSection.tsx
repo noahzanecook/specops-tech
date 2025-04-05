@@ -5,6 +5,12 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 export default function FeaturesSection() {
   const features = [
     {
+      icon: <Glasses className="h-10 w-10" />,
+      title: "Cutting-edge Technology",
+      description: "Utilizes the Snap Spectacles for an immersive AR experience.",
+      color: "from-purple-500 to-pink-500"
+    },
+    {
       icon: <Sparkles className="h-10 w-10" />,
       title: "Immersive AR Experience",
       description: "Blend digital objects with the real world in a way that feels natural and seamless.",
@@ -15,13 +21,6 @@ export default function FeaturesSection() {
       title: "Real-time AR Interaction",
       description: "Interact with digital objects using natural gestures with minimal latency.",
       color: "from-accent to-cyan-600"
-    },
-    {
-      
-      icon: <Glasses className="h-10 w-10" />,
-      title: "Cutting-edge Technology",
-      description: "Utilizes the Snap Spectacles for an immersive AR experience.",
-      color: "from-purple-500 to-pink-500"
     },
     {
       icon: <Globe className="h-10 w-10" />,

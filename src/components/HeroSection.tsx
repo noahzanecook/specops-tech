@@ -21,7 +21,7 @@ export default function HeroSection() {
                 Immerse GT 2025
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold py-3 line">
-                <span className="block text-glow line">Multiplayer AR</span>
+                <span className="block text-glow line">AR Laser Tag</span>
                 <span className="gradient-text block line leading-normal">With Spec Ops</span>
               </h1>
               <p className="mt-8 text-xl text-foreground/80 max-w-lg overflow-visible">
