@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -41,13 +41,15 @@ export default function Navbar() {
             ))}
           </div>
 
-          <Button 
-            variant="default" 
-            className="hidden md:block"
-            onClick={() => window.location.href = "#contact"}
+          <a 
+            href="https://github.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="hidden md:flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors"
           >
-            Join Beta
-          </Button>
+            <Github className="h-5 w-5" />
+            <span>GitHub</span>
+          </a>
 
           {/* Mobile menu button */}
           <div className="md:hidden">
@@ -79,16 +81,16 @@ export default function Navbar() {
               {item.name}
             </a>
           ))}
-          <Button 
-            variant="default" 
-            className="w-full"
-            onClick={() => {
-              window.location.href = "#contact";
-              setIsMenuOpen(false);
-            }}
+          <a 
+            href="https://github.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-foreground/80 hover:text-primary py-2 transition-colors"
+            onClick={() => setIsMenuOpen(false)}
           >
-            Join Beta
-          </Button>
+            <Github className="h-5 w-5" />
+            <span>GitHub</span>
+          </a>
         </div>
       </div>
     </nav>
