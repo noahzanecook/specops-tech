@@ -42,7 +42,7 @@ export default function Navbar() {
           </div>
 
           <a 
-            href="https://github.com" 
+            href="https://github.com/ColeKaplan/LaserSpectacle" 
             target="_blank" 
             rel="noopener noreferrer"
             className="hidden md:flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors"

@@ -1,5 +1,5 @@
 
-import { Layers, Code, Eye, Cpu } from "lucide-react";
+import { Users, Trees, Hand, Trophy } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function ProjectSection() {
@@ -20,15 +20,7 @@ export default function ProjectSection() {
             <div className="relative aspect-video rounded-lg overflow-hidden bg-muted">
               {/* This would ideally be a project visualization or screenshot */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-6xl text-glow gradient-text font-bold">Spec Ops</div>
-              </div>
-              
-              {/* Decorative elements */}
-              <div className="absolute top-4 left-4 glass-card px-3 py-1 rounded text-sm">
-                AR Interface
-              </div>
-              <div className="absolute bottom-4 right-4 glass-card px-3 py-1 rounded text-sm">
-                Real-time Rendering
+                <div className="text-6xl text-glow gradient-text font-bold leading-normal">Spec Ops</div>
               </div>
             </div>
             
@@ -36,48 +28,48 @@ export default function ProjectSection() {
           </div>
           
           <div className="space-y-6">
-            <h3 className="text-2xl font-bold">Reinventing Interaction Through AR</h3>
+            <h3 className="text-2xl font-bold">A New Shared AR Experience</h3>
             <p className="text-foreground/80">
-              ldwaldwald wad kwakjd wajd waljhd kwjahdl wahdl whaljdh waljhd lwajhd lwahdl jwhaldj whaldj hwaljdh waljhd lwajhd ljwahdlj whaljd hwlajdh lwajdh
+              Spec Ops is a multiplayer AR laser tag experience that uses the augmented reality capabilities of the Snapchat Spectacles. Players can play around their environment, making each location unique.
             </p>
             <p className="text-foreground/80">
-              l awjdl waljdb waojdba wbdwab odubwaou dbowau dbowuabdo uwabdouwbaodu wbaoudbw oaudbowaubdouwa b
+              We used Spectacles Sync Kit to create an experience where players can interact with each other in AR.
             </p>
             <div className="pt-4 grid sm:grid-cols-2 gap-4">
               <div className="flex items-start space-x-3">
                 <div className="p-2 rounded-md bg-primary/20 text-primary">
-                  <Layers className="h-5 w-5" />
+                  <Users className="h-5 w-5" />
                 </div>
                 <div>
-                  <h4 className="font-medium">Motion Tracking</h4>
-                  <p className="text-sm text-foreground/70">INput descritption</p>
+                  <h4 className="font-medium">Multiplayer</h4>
+                  <p className="text-sm text-foreground/70">Interact with other users</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
                 <div className="p-2 rounded-md bg-accent/20 text-accent">
-                  <Code className="h-5 w-5" />
+                  <Trees className="h-5 w-5" />
                 </div>
                 <div>
-                  <h4 className="font-medium">Spatial Mapping</h4>
-                  <p className="text-sm text-foreground/70">INput descritption</p>
+                  <h4 className="font-medium">Environment Mapping</h4>
+                  <p className="text-sm text-foreground/70">Tactically use your environment</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
                 <div className="p-2 rounded-md bg-indigo-500/20 text-indigo-400">
-                  <Eye className="h-5 w-5" />
+                  <Hand className="h-5 w-5" />
                 </div>
                 <div>
-                  <h4 className="font-medium">Object Recognition</h4>
-                  <p className="text-sm text-foreground/70">Players can hide behind walls</p>
+                  <h4 className="font-medium">Hand Tracking</h4>
+                  <p className="text-sm text-foreground/70">Use your hand to aim and shoot</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
                 <div className="p-2 rounded-md bg-purple-500/20 text-purple-400">
-                  <Cpu className="h-5 w-5" />
+                  <Trophy className="h-5 w-5" />
                 </div>
                 <div>
-                  <h4 className="font-medium">Something</h4>
-                  <p className="text-sm text-foreground/70">INput descritption</p>
+                  <h4 className="font-medium">Play to win</h4>
+                  <p className="text-sm text-foreground/70">Compete aginst your friends</p>
                 </div>
               </div>
             </div>

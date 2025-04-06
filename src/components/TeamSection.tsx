@@ -17,7 +17,7 @@ export default function TeamSection() {
       name: "Cole Kaplan",
       role: "GT Computer Science '26",
       image: "https://media.licdn.com/dms/image/v2/D4E03AQFgndCG2WEIzA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1732853513955?e=1749081600&v=beta&t=fzWpxz8H6_9NbKsrB-1gzvacMlPZxXnA4HTU12fK_zY",
-      bio: "made hit registration",
+      bio: "coded stuff",
       linkedin: "https://www.linkedin.com/in/colekaplan/",
       github: "https://github.com/ColeKaplan",
       link: "https://colekaplan.dev/"
@@ -33,7 +33,7 @@ export default function TeamSection() {
     },
     {
       name: "Noah Cook",
-      role: "GT Computer Science '26",
+      role: "GT Computer Science '27",
       image: "https://media.licdn.com/dms/image/v2/D4E03AQGeDZbg-dbdzg/profile-displayphoto-shrink_800_800/B4EZXze.29HMAc-/0/1743546740468?e=1749081600&v=beta&t=A5wEISWbqqcC03jh0CL84H09lSTwMRcVEwkgczWyoXY",
       bio: "made website",
       linkedin: "https://www.linkedin.com/in/noahzanecook/",

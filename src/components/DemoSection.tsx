@@ -5,34 +5,19 @@ import { Button } from "@/components/ui/button";
 export default function DemoSection() {
   const screenshots = [
     {
-      title: "AR Object Manipulation",
-      description: "Users can place and manipulate virtual objects in real space.",
-      image: "https://images.unsplash.com/photo-1626379953822-baec19c3accd?q=80&w=600&auto=format"
+      title: "Aiming with AR",
+      description: "Intuitive aiming system that allows users to shoot at targets in AR using jsut their hand.",
+      image: "/assets/shootingcyl.gif"
     },
     {
       title: "Environmental Mapping",
-      description: "The app creates detailed maps of physical spaces for precise object placement.",
-      image: "https://images.unsplash.com/photo-1626446634084-9ab7bf259e06?q=80&w=600&auto=format"
+      description: "The app creates a 3D map of the environment, allowing for play around real-world objects.",
+      image: "/assets/jadenshooting.gif"
     },
     {
       title: "Collaborative Experience",
-      description: "Multiple users can interact with the same AR elements in real-time.",
-      image: "https://images.unsplash.com/photo-1598520106830-8c45c2417d65?q=80&w=600&auto=format"
-    },
-    {
-      title: "placeholder",
-      description: "blabhabl",
-      image: "https://images.unsplash.com/photo-1598520106830-8c45c2417d65?q=80&w=600&auto=format"
-    },
-    {
-      title: "placeholder",
-      description: "blabhabl",
-      image: "https://images.unsplash.com/photo-1598520106830-8c45c2417d65?q=80&w=600&auto=format"
-    },
-    {
-      title: "placeholder",
-      description: "blabhabl",
-      image: "https://images.unsplash.com/photo-1598520106830-8c45c2417d65?q=80&w=600&auto=format"
+      description: "Seamlessly play with friends in a shared AR space, enhancing the fun and excitement.",
+      image: "/assets/multiplayer.gif"
     }
   ];
 
@@ -47,7 +32,7 @@ export default function DemoSection() {
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold mb-4 gradient-text inline-block">See Spec Ops in Action</h2>
           <p className="text-xl text-foreground/80 max-w-2xl mx-auto">
-            Experience the power and versatility of our AR platform through these demos and examples.
+            Learn more about our project through our demo reel and examples.
           </p>
         </div>
 
@@ -55,23 +40,21 @@ export default function DemoSection() {
           <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10 -z-10"></div>
           
           <div className="aspect-video rounded-lg overflow-hidden bg-card relative">
-            {/* Video placeholder */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <Button size="lg" className="rounded-full w-16 h-16 flex items-center justify-center">
-                <Play className="h-6 w-6 ml-1" />
-              </Button>
-            </div>
-            
-            <div className="absolute bottom-4 left-4 glass-card px-4 py-2 rounded-md text-sm flex items-center">
-              <Play className="h-4 w-4 mr-2" />
-              Official Demo Reel
-            </div>
+            {/* Embedded YouTube video */}
+            <iframe
+              className="absolute inset-0 w-full h-full"
+              src="https://www.youtube.com/embed/qgHo_1nC_Fo"
+              title="Official Demo Reel"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </div>
           
           <div className="mt-6 flex flex-wrap gap-4 justify-center">
             <Button className="gap-2" >
             <a 
-            href="https://github.com" 
+            href="https://github.com/ColeKaplan/LaserSpectacle" 
             target="_blank" 
             rel="noopener noreferrer"
             className="hidden md:flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors"
@@ -83,7 +66,7 @@ export default function DemoSection() {
           </div>
         </div>
         
-        <h3 className="text-2xl font-bold mb-8 text-center">Screenshots & Use Cases</h3>
+        <h3 className="text-2xl font-bold mb-8 text-center">Functionality Examples</h3>
         
         <div className="grid md:grid-cols-3 gap-8">
           {screenshots.map((item, index) => (

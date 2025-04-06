@@ -65,26 +65,19 @@ export default function HeroSection() {
           <div className="relative glass-card p-4 rounded-xl aspect-square max-w-md mx-auto w-full">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-xl -z-10"></div>
             <div className="relative w-full h-full rounded-lg overflow-hidden">
-              {/* This would ideally be an AR demo or video */}
-              <div className="absolute inset-0 flex items-center justify-center bg-muted">
-                <div className="w-32 h-32 rounded-full bg-primary/20 animate-pulse flex items-center justify-center">
-                  <div className="w-24 h-24 rounded-full bg-primary/30 animate-pulse flex items-center justify-center">
-                    <div className="w-16 h-16 rounded-full bg-primary/40 animate-pulse flex items-center justify-center">
-                      <div className="w-8 h-8 rounded-full bg-primary/50 animate-glow"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="absolute bottom-4 left-4 glass-card px-4 py-2 rounded-md text-sm">
-                AR Experience Demo
-              </div>
+              <img
+                src="/assets/multiplayer.gif"
+                alt="AR Laser Tag Demo"
+                className="w-full h-full object-cover rounded-lg blur-sm"
+              />
+            
             </div>
             
             {/* AR element decorations */}
             <div className="absolute top-8 right-8 w-16 h-16 border border-accent/50 rounded flex items-center justify-center animate-rotate-slow">
               <div className="w-2 h-2 bg-accent rounded-full"></div>
             </div>
-            <div className="absolute bottom-12 left-8 w-8 h-8 border border-primary/50 rounded-lg animate-float"></div>
+            <div className="absolute bottom-8 left-8 w-8 h-8 border border-primary/50 rounded-lg animate-float"></div>
             <div className="absolute top-1/2 left-12 w-4 h-4 bg-primary/30 rounded-full animate-pulse"></div>
           </div>
         </div>
