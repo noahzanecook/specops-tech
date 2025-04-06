@@ -66,7 +66,7 @@ export default function HeroSection() {
             <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-xl -z-10"></div>
             <div className="relative w-full h-full rounded-lg overflow-hidden">
               <img
-                src="/assets/multiplayer.gif"
+                src="/assets/runningaround.gif"
                 alt="AR Laser Tag Demo"
                 className="w-full h-full object-cover rounded-lg blur-sm"
               />
