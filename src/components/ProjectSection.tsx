@@ -33,7 +33,7 @@ export default function ProjectSection() {
               Spec Ops is a multiplayer AR laser tag experience that uses the augmented reality capabilities of the Snapchat Spectacles. Players can play around their environment, making each location unique.
             </p>
             <p className="text-foreground/80">
-              We used Spectacles Sync Kit to create an experience where players can interact with each other in AR.
+              We used Spectacles Sync Kit to create an experience where players can interact with each other in AR. We used colocation and world mesh to map the environment.
             </p>
             <div className="pt-4 grid sm:grid-cols-2 gap-4">
               <div className="flex items-start space-x-3">

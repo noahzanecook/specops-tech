@@ -25,7 +25,7 @@ export default function FeaturesSection() {
     {
       icon: <Globe className="h-10 w-10" />,
       title: "Designed for Multiplayer",
-      description: "Designed for multiplayer experiences, bringing friends together in a shared AR space.",
+      description: "Designed to bring friends together in a shared AR space, no matter the location.",
       color: "from-green-500 to-teal-500"
     }
   ];
