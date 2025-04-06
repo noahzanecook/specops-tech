@@ -5,19 +5,19 @@ import { Button } from "@/components/ui/button";
 export default function DemoSection() {
   const screenshots = [
     {
+      title: "Environmental Mapping",
+      description: "The app creates a 3D map of the environment, allowing for play around real-world objects.",
+      image: "/assets/balls.gif"
+    },
+    {
       title: "Aiming with AR",
       description: "Intuitive aiming system that allows users to shoot at targets in AR using jsut their hand.",
       image: "/assets/shootingcyl.gif"
     },
     {
-      title: "Environmental Mapping",
-      description: "The app creates a 3D map of the environment, allowing for play around real-world objects.",
-      image: "/assets/jadenshooting.gif"
-    },
-    {
       title: "Collaborative Experience",
       description: "Seamlessly play with friends in a shared AR space, enhancing the fun and excitement.",
-      image: "/assets/multiplayer.gif"
+      image: "/assets/shootingaroundwall.gif"
     }
   ];
 
@@ -43,7 +43,7 @@ export default function DemoSection() {
             {/* Embedded YouTube video */}
             <iframe
               className="absolute inset-0 w-full h-full"
-              src="https://www.youtube.com/embed/qgHo_1nC_Fo"
+              src="https://www.youtube.com/embed/2iftoQBStko"
               title="Official Demo Reel"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
