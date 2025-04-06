@@ -1,10 +1,10 @@
-# This is the repo for specops.tech
+# This is the repo for SpecOps.tech
 
-**URL**: https://www.specops.tech/ or https://immersegt-demo-site.vercel.app/
+**URL**: [/SpecOps.tech/](https://www.specops.tech/) or https://immersegt-demo-site.vercel.app/
 
 ## Project info
 
-This is a showcase our project Spec Ops, a multiplayer AR laser tag experience developed for ImmerseGT 2025
+This is a showcase for our project Spec Ops, a multiplayer AR laser tag experience developed for ImmerseGT 2025
 
 Spec Ops repo: https://github.com/ColeKaplan/LaserSpectacle
 
