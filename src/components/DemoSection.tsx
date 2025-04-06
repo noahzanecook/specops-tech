@@ -17,7 +17,7 @@ export default function DemoSection() {
     {
       title: "Collaborative Experience",
       description: "Seamlessly play with friends in a shared AR space, enhancing the fun and excitement.",
-      image: "/assets/shootingaroundwall.gif"
+      image: "/assets/runningaround.gif"
     }
   ];
 
